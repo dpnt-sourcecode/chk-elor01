@@ -129,4 +129,3 @@ function addTo(target, metrics) {
         : ((dest.covered / dest.total) * 100).toFixed(2);
   }
 }
-
