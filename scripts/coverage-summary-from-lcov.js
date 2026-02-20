@@ -14,7 +14,7 @@ fs.mkdirSync(coverageDir, { recursive: true });
 
 if (!fs.existsSync(lcovPath)) {
   console.warn(
-    `No LCOV report found at ${lcovPath}, skipping summary generation.`
+    `No LCOV report found at ${lcovPath}, skipping summary generation.`,
   );
   process.exit(0);
 }
@@ -129,4 +129,3 @@ function addTo(target, metrics) {
         : ((dest.covered / dest.total) * 100).toFixed(2);
   }
 }
-
